@@ -1,9 +1,10 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link } from 'react-router-dom';
 
 const SignForm = ({ initialValues, handleSubmit }) => {
   return (
-    <div className="w-[408px] p-6 mx-auto min-h-[100vh] bg-white text-gray-600 rounded-lg shadow-xl flex items-center">
+    <div className="w-[408px] p-6 mx-auto h-[80vh] mt-20 bg-white text-gray-600 rounded-lg shadow-xl flex items-center">
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -61,7 +62,9 @@ const SignForm = ({ initialValues, handleSubmit }) => {
 
           <div className="flex flex-row gap-1 justify-center items-center">
             <p>Already Have an Account?</p>
-            <p className="text-[#5F00D9] cursor-pointer hover:text-purple-400">Log in</p>
+            <Link to={"/Signin"}>
+                <p className="text-[#5F00D9] cursor-pointer hover:text-purple-400">Log in</p>
+            </Link>
           </div>
         </Form>
       </Formik>

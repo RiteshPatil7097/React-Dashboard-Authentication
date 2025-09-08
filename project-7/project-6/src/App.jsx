@@ -4,6 +4,8 @@ import Support from './pages/Support/Support'
 import Transaction from './pages/Transaction/Transaction'
 import Signup from './pages/Auth/Singup/Signup'
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import Signin from './pages/Auth/Signin/Signin'
+import RegisterEmailverify from './pages/Auth/RegisterEmailVerify/RegisterEmailverify'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path:"/Signup",
     element:<Signup />
+  },
+  {
+    path:"/Signin",
+    element:<Signin />
+  },
+  {
+    path:"/RegEmail",
+    element:<RegisterEmailverify />
   }
 ]);
 
