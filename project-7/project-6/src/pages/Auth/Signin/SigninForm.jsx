@@ -36,7 +36,11 @@ const SigninForm = ({ initialValues, handleSubmit }) => {
                <label>Remember me</label>
             </div>
             <div className="flex flex-row gap-1 justify-end items-end ml-24">
-                 <p className="text-[#5F00D9] cursor-pointer hover:text-purple-400">Forgot Password?</p>
+                 <p className="text-[#5F00D9] cursor-pointer hover:text-purple-400">
+                   <Link to={"/Forgot"}>
+                      Forgot Password?
+                   </Link>
+                 </p>
             </div>
           </div>
           <ErrorMessage name="terms" component="div" className="text-red-500 text-sm" />
