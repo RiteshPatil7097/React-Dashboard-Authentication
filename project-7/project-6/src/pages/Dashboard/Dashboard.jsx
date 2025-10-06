@@ -6,7 +6,7 @@ import Portfolio from './Components/Portfolio';
 import PriceSection from './Components/PriceSection';
 import Transaction from './Components/Transaction';
 import Loan from './Components/Loan'
-import { fetchExample } from '../../api/query/userQuery';
+import { fetchExample } from '../../api/query/exampleQuery';
 import { useQuery } from 'react-query';
 const Dashboard = () => {
 
